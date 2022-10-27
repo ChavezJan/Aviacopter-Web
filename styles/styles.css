@@ -90,6 +90,28 @@
   width: 100%;
 }
 
+/* services */
+.services {
+  background-color: rgb(193, 193, 193);
+  height: calc(100vh - 200px);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.service_container {
+  width: 200px;
+  height: 200px;
+  background-color: aqua;
+  margin: 10px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
 /* Fotter */
 .footer {
   width: 100%;
@@ -138,5 +160,8 @@
   .contact_info_subtitle {
     align-items: center;
     font-size: 20px;
+  }
+  .services {
+    flex-direction: column;
   }
 }

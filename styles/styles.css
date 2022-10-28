@@ -92,24 +92,74 @@
 
 /* services */
 .services {
-  background-color: rgb(193, 193, 193);
-  height: calc(100vh - 200px);
+  width: 100%;
+  background-color: rgb(234, 234, 234);
+  height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  max-height: 700px;
+  min-height: 400px;
 }
-
+.service_title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.service_subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 45px;
+}
 .service_container {
-  width: 200px;
-  height: 200px;
-  background-color: aqua;
-  margin: 10px;
-  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.service_container_info {
+  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
+  width: 300px;
+  height: 300px;
+  background-color: rgb(234, 234, 234);
+  /* background-color: #fff; */
+  margin: 10px 60px 10px 60px;
+  /* border-radius: 20px; */
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
+  transition: 1s;
+  display: flex;
+  flex-direction: column;
+}
+/* .service_container_info:hover {
+  width: 310px;
+  height: 310px;
+} */
+
+.service_container_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: #bf9a55;
+}
+
+.service_info_img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  /* border-radius: 20px; */
+  height: 220px;
+  width: 320px;
+  margin-bottom: 20px;
+  transition: 1s;
+}
+
+.service_info_img:hover {
+  height: 240px;
+  width: 340px;
 }
 
 /* Fotter */
@@ -163,5 +213,38 @@
   }
   .services {
     flex-direction: column;
+    max-height: 700px;
+    padding: 50px 0 50px 0;
+  }
+  .service_container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  .service_container_info {
+    width: 200px;
+    height: 150px;
+    margin: 20px 0 20px 0;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+  .service_info_img {
+    height: 140px;
+    width: 240px;
+  }
+  .service_info_img:hover {
+    height: 140px;
+    width: 240px;
+  }
+  .service_title {
+    font-size: 30px;
+  }
+  .service_container_title {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 }

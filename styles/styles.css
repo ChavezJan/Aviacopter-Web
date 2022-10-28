@@ -22,9 +22,11 @@
 .contact {
   width: 100%;
   height: calc(100vh - 150px);
+  background-color: rgba(69, 69, 69, 0.866);
   display: flex;
   flex-direction: row;
   min-height: 600px;
+  color: #fff;
 }
 .contact_container {
   display: flex;
@@ -84,17 +86,22 @@
 
 .contact_container_image {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contact_image {
-  width: 100%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  width: 90%;
+  border-radius: 40px;
 }
 
 /* services */
 .services {
   width: 100%;
   background-color: rgb(234, 234, 234);
-  height: 100vh;
+  height: 120vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -112,7 +119,7 @@
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 25px;
-  margin-bottom: 45px;
+  margin-bottom: 55px;
 }
 .service_container {
   display: flex;
@@ -126,7 +133,7 @@
   height: 300px;
   background-color: rgb(234, 234, 234);
   /* background-color: #fff; */
-  margin: 10px 60px 10px 60px;
+  margin: 10px 100px 10px 100px;
   /* border-radius: 20px; */
   display: flex;
   justify-content: center;
@@ -146,29 +153,64 @@
   font-weight: 600;
   font-size: 35px;
   color: #bf9a55;
+  width: 60%;
+  text-align: center;
+  margin: auto;
 }
 
 .service_info_img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  /* border-radius: 20px; */
-  height: 220px;
-  width: 320px;
+  border-radius: 8px;
+  height: 320px;
+  width: 420px;
   margin-bottom: 20px;
   transition: 1s;
 }
 
 .service_info_img:hover {
-  height: 240px;
-  width: 340px;
+  height: 340px;
+  width: 440px;
 }
 
+/* Helicopter */
+.helicopter {
+  width: 100%;
+  height: calc(100vh - 100px);
+  background-color: aquamarine;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.helicopter_title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 70px;
+  margin-bottom: 20px;
+}
+.helicopter_subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 55px;
+}
+.helicopter_container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.helicopter_container_info {
+}
 /* Fotter */
+/* To fix in movil */
+
 .footer {
   width: 100%;
   height: 220px;
   background-color: black;
+  color: #fff;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -178,13 +220,17 @@
   border-color: black;
   font-size: 50px !important;
   margin: 10px;
+  transition: 0.5s;
 }
 .icon_footer:hover {
   color: #bf9a55;
   border-color: rgb(66, 66, 66);
 }
-.footer_icon_container {
-  margin-bottom: 20px;
+.footer_rights_container {
+  width: 33%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
 .footer_rights {
   color: #fff;
@@ -192,8 +238,38 @@
   font-weight: 300;
   font-size: 12px;
 }
+.footer_icon_container {
+  margin-bottom: 20px;
+  width: 33%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+.footer_contact_container {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+.footer_contact_info {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+.footer_contact_mail {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s;
+}
+.footer_contact_mail:hover {
+  color: #bf9a55;
+  border-color: rgb(66, 66, 66);
+}
 
 @media only screen and (max-width: 600px) {
+  /* contact */
   .contact {
     flex-direction: column;
     align-items: center;
@@ -202,6 +278,7 @@
   }
   .contact_container_info {
     align-items: center;
+    margin-bottom: 30px;
   }
   .contact_info_title {
     align-items: center;
@@ -211,10 +288,11 @@
     align-items: center;
     font-size: 20px;
   }
+  /* Service */
   .services {
     flex-direction: column;
-    max-height: 700px;
-    padding: 50px 0 50px 0;
+    max-height: 1000px;
+    padding: 100px 0 100px 0;
   }
   .service_container {
     display: flex;
@@ -224,7 +302,7 @@
   .service_container_info {
     width: 200px;
     height: 150px;
-    margin: 20px 0 20px 0;
+    margin: 45px 0 30px 0;
     margin-bottom: 30px;
     border-radius: 20px;
     display: flex;
@@ -241,10 +319,22 @@
     width: 240px;
   }
   .service_title {
+    margin-top: 20px;
     font-size: 30px;
+  }
+  .service_subtitle {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   .service_container_title {
     font-size: 20px;
     margin-bottom: 30px;
   }
+  /* Helicopter */
+  .helicopter {
+    flex-direction: column;
+  }
+  /* Footer */
 }

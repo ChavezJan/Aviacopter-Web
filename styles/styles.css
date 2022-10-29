@@ -3,6 +3,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: black;
+}
 
 /* Navbar */
 .navbar {
@@ -22,7 +25,8 @@
 .contact {
   width: 100%;
   height: calc(100vh - 150px);
-  background-color: rgba(69, 69, 69, 0.866);
+  /* background-color: rgba(69, 69, 69, 0.866); */
+  background-color: black;
   display: flex;
   flex-direction: row;
   min-height: 600px;
@@ -94,21 +98,36 @@
 .contact_image {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   width: 90%;
-  border-radius: 40px;
+  border-radius: 8px;
 }
 
 /* services */
 .services {
   width: 100%;
-  background-color: rgb(234, 234, 234);
-  height: 120vh;
+  /* background-color: rgb(234, 234, 234); */
+  background-color: black;
+  color: #fff;
+  height: calc(100vh - 400px);
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  max-height: 700px;
+  justify-content: start;
+  margin-top: 20px;
   min-height: 400px;
 }
+.serv_cont_test {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: #fff;
+}
+
 .service_title {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -120,6 +139,7 @@
   font-weight: 500;
   font-size: 25px;
   margin-bottom: 55px;
+  width: 760px;
 }
 .service_container {
   display: flex;
@@ -128,32 +148,22 @@
   margin-top: 20px;
 }
 .service_container_info {
-  /* box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23); */
   width: 300px;
   height: 300px;
-  background-color: rgb(234, 234, 234);
-  /* background-color: #fff; */
   margin: 10px 100px 10px 100px;
-  /* border-radius: 20px; */
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
-  transition: 1s;
-  display: flex;
   flex-direction: column;
 }
-/* .service_container_info:hover {
-  width: 310px;
-  height: 310px;
-} */
 
 .service_container_title {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 35px;
   color: #bf9a55;
-  width: 60%;
+  width: 70%;
   text-align: center;
   margin: auto;
 }
@@ -161,14 +171,14 @@
 .service_info_img {
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   border-radius: 8px;
-  height: 320px;
+  height: 380px;
   width: 420px;
   margin-bottom: 20px;
   transition: 1s;
 }
 
 .service_info_img:hover {
-  height: 340px;
+  height: 400px;
   width: 440px;
 }
 
@@ -197,9 +207,97 @@
 .helicopter_container {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
 }
 .helicopter_container_info {
+  width: 300px;
+  height: 300px;
+  margin: 10px 100px 10px 100px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+.helicopter_info_img {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 8px;
+  height: 380px;
+  width: 420px;
+  margin-bottom: 20px;
+  transition: 0.5s;
+}
+/* .helicopter_info_img:hover {
+  height: 400px;
+  width: 440px;
+} */
+.hel_cont_info {
+  width: 50%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 70px;
+  margin-bottom: 20px;
+  background-color: black;
+  color: #fff;
+}
+.helicopter_container_title {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 35px;
+  color: #bf9a55;
+  width: 70%;
+  text-align: center;
+  margin: auto;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s;
+  background-color: #bf9a55ae;
+  border-radius: 8px;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .helicopter_info_img {
+  opacity: 0;
+}
+
+.text {
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.copter_info {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 26px;
+
+  width: 100%;
+  text-align: center;
+  margin: auto;
 }
 /* Fotter */
 /* To fix in movil */

@@ -185,8 +185,8 @@ body {
 /* Helicopter */
 .helicopter {
   width: 100%;
-  height: calc(100vh - 100px);
-  background-color: aquamarine;
+  height: calc(100vh - 500px);
+  background-color: black;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -225,7 +225,7 @@ body {
   height: 380px;
   width: 420px;
   margin-bottom: 20px;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 /* .helicopter_info_img:hover {
   height: 400px;
@@ -268,8 +268,8 @@ body {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: 1s;
-  background-color: #bf9a55ae;
+  transition: 0.5s;
+  background-color: #bf9a55;
   border-radius: 8px;
 }
 
@@ -294,14 +294,22 @@ body {
   font-family: "Open Sans", sans-serif;
   font-weight: 600;
   font-size: 26px;
-
+  color: #fff;
   width: 100%;
   text-align: center;
   margin: auto;
 }
 /* Fotter */
 /* To fix in movil */
-
+.separation {
+  height: 0px;
+  width: 100%;
+  background-color: black;
+}
+.helicopter_container_title {
+  opacity: 0;
+  position: absolute;
+}
 .footer {
   width: 100%;
   height: 220px;
@@ -377,6 +385,7 @@ body {
   .contact_container_info {
     align-items: center;
     margin-bottom: 30px;
+    text-align: center;
   }
   .contact_info_title {
     align-items: center;
@@ -389,8 +398,9 @@ body {
   /* Service */
   .services {
     flex-direction: column;
-    max-height: 1000px;
-    padding: 100px 0 100px 0;
+    max-height: 700px;
+    padding: 0 0 0px 0;
+    margin-bottom: 70px;
   }
   .service_container {
     display: flex;
@@ -430,9 +440,34 @@ body {
     font-size: 20px;
     margin-bottom: 30px;
   }
+  .serv_cont_test {
+    width: 60%;
+    margin-top: 30px;
+    height: 300px;
+    text-align: center;
+  }
   /* Helicopter */
   .helicopter {
     flex-direction: column;
+    height: 700px;
+  }
+  .helicopter_info_img {
+    height: 140px;
+    width: 240px;
   }
   /* Footer */
+  .footer {
+    flex-direction: column-reverse;
+    height: 200px;
+    width: 100%;
+  }
+  .separation {
+    height: 300px;
+  }
+  .helicopter_container_title {
+    opacity: 1;
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+  }
 }

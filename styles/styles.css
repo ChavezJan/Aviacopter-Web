@@ -74,7 +74,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   font-family: "Roboto", sans-serif;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 500;
   border-radius: 08px;
   transition: all 0.3s;
@@ -134,12 +134,13 @@ body {
   font-weight: 500;
   font-size: 70px;
   margin-bottom: 20px;
+  margin-top: 50px;
 }
 .service_subtitle {
   font-family: "Open Sans", sans-serif;
   font-weight: 500;
   font-size: 25px;
-  margin-bottom: 55px;
+  margin-bottom: 100px;
   width: 760px;
 }
 .service_container {
@@ -305,7 +306,7 @@ body {
 /* Fotter */
 /* To fix in movil links*/
 .separation {
-  height: 0px;
+  height: 50px;
   width: 100%;
   background-color: black;
 }
@@ -313,9 +314,16 @@ body {
   opacity: 0;
   position: absolute;
 }
+.helicopters_subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  font-size: 25px;
+  margin-bottom: 100px;
+  width: 760px;
+}
 .footer {
   width: 100%;
-  height: 220px;
+  height: 350px;
   background-color: black;
   color: #fff;
   display: flex;
@@ -327,7 +335,7 @@ body {
   color: #fff;
   border-radius: 100%;
   border-color: black;
-  font-size: 50px !important;
+  font-size: 33px !important;
   margin: 10px;
   transition: 0.5s;
 }
